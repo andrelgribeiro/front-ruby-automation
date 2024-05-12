@@ -1,0 +1,8 @@
+##YAML Templates
+
+---
+default: --publish-quiet -p html -p bdd -p json -p prod
+html: --format html --out=features/logs/Report.html
+bdd: --format pretty
+json: --format json -o "features/logs/report.json"
+prod: AMBIENTE=prod
